@@ -24,6 +24,6 @@
         ]
     ],
     "autoupdate": {
-        "url": "https://apps.taskade.com/updates/Taskade_Setup_$version.exe"
+        "url": "https://apps.taskade.com/updates/Taskade_Setup_$version.exe#/dl.7z"
     }
 }
