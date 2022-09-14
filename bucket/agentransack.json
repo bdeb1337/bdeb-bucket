@@ -19,5 +19,8 @@
             "AgentRansack.exe",
             "Agent Ransack"
         ]
-    ]
+    ],
+    "autoupdate": {
+        "url": "https://download.mythicsoft.com/flp/$version/agentransack_$version.exe"
+    }
 }
