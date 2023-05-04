@@ -1,5 +1,5 @@
 {
-    "version": "3341",
+    "version": "3389",
     "description": "Free File Searching Utility",
     "homepage": "https://www.mythicsoft.com/agentransack/",
     "checkver": {
@@ -7,8 +7,8 @@
         "regex": "\\((\\d+)\\)"
     },
     "license": "All rights reserved",
-    "url": "https://download.mythicsoft.com/flp/3341/agentransack_3341.exe#/dl.7z",
-    "hash": "0651461f0fbf325e1020bb8aeaccf0cc1966bf98111c4d4c22d382cba460b5e3",
+    "url": "https://download.mythicsoft.com/flp/3389/agentransack_3389.exe#/dl.7z",
+    "hash": "74fa40b1050d42b165bed8644c04b23604eaef25dd761845c244b166e55eb527",
     "pre_install": "Expand-7zipArchive \"$dir\\`$TEMP\\`$_4_\\`$_5_\" \"$dir\"",
     "bin": [
         "AgentRansack.exe",
