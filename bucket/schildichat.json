@@ -1,0 +1,28 @@
+{
+    "version": "1.11.26",
+    "description": "Matrix client / Element Web/Desktop fork",
+    "homepage": "https://schildi.chat",
+    "license": "All rights reserved",
+    "url": "https://github.com/SchildiChat/schildichat-desktop/releases/download/v1.11.30-sc.2/SchildiChat_Setup_v1.11.30-sc.2.exe#/dl.7z",
+    "hash": "8981568A14A5A93502A6D96EA13AFAC56CFF3E38EFDE8BD7712167A79504FD83",
+    "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+    "bin": [
+        "SchildiChat.exe",
+        [
+            "SchildiChat.exe",
+            "SchildiChat-desktop"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "SchildiChat.exe",
+            "SchildiChat"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/SchildiChat/schildichat-desktop"
+    },
+    "autoupdate": {
+        "url": "https://github.com/SchildiChat/schildichat-desktop/releases/download/v$version$matchTail/SchildiChat_Setup_v$version$matchTail.exe#/dl.7z"
+    }
+}
