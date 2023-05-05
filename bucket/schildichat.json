@@ -1,5 +1,5 @@
 {
-    "version": "1.11.26",
+    "version": "1.11.26-sc.1",
     "description": "Matrix client / Element Web/Desktop fork",
     "homepage": "https://schildi.chat",
     "license": "All rights reserved",
@@ -20,9 +20,10 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/SchildiChat/schildichat-desktop"
+        "url": "https://github.com/SchildiChat/schildichat-desktop/releases/latest",
+        "regex": "\\/releases\\/tag\\/(?:v|V)?([\\d.]+\\-[a-z]+\\.[\\d]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/SchildiChat/schildichat-desktop/releases/download/v$version$matchTail/SchildiChat_Setup_v$version$matchTail.exe#/dl.7z"
+        "url": "https://github.com/SchildiChat/schildichat-desktop/releases/download/v$version/SchildiChat_Setup_v$version.exe#/dl.7z"
     }
 }
