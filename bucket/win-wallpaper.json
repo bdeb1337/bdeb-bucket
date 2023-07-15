@@ -5,7 +5,6 @@
     "license": "MIT License",
     "url": "https://github.com/sindresorhus/win-wallpaper/releases/download/v3.0.2/wallpaper-x86_64-pc-windows.zip",
     "hash": "7a5cd01aa0ad88296a6411f4ad017cfdbe3a28e9c877f1c033ea8963442cb165",
-    "extract_dir": "win-wallpaper",
     "bin": [
         "wallpaper.exe",
         [
