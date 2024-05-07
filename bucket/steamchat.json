@@ -7,7 +7,7 @@
     "hash": "a1e3640a1b25e82dc9ab454eec5c6b0d286e5a76f60d56c333964acd2afc10b4",
     "shortcuts": [
         [
-            "steamchat.exe",
+            "steamchat-$version.exe",
             "steamchat"
         ]
     ],
