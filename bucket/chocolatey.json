@@ -4,34 +4,18 @@
     "homepage": "https://chocolatey.org/",
     "license": "Apache-2.0",
     "changelog": "https://docs.chocolatey.org/en-us/choco/release-notes",
-    "url": "https://chocolatey.org/install.ps1",
-    "hash": "44e045ed5350758616d664c5af631e7f2cd10165f5bf2bd82cbf3a0bb8f63462",
-    "installer": {
-        "script": [
-            "$env:ChocolateyInstall=\"$dir/choco\" ",
-            "Set-ExecutionPolicy Bypass -Scope Process -Force;",
-            "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;",
-            "iex(\"$dir\\install.ps1\")",
-            " . $profile"
-        ]
-    },
+    "url": "https://community.chocolatey.org/api/v2/package/chocolatey/2.2.2#/dl.7z",
+    "hash": "4e1acbdac571719f90b2566566668c448a20074e7c2e3faa37251c62af4efd86",
+    "pre_install": "Expand-7zipArchive \"$dir\\tools\\chocolateyInstall\" \"$dir\"",
     "bin": [
-        "bin/choco.exe",
-        "bin/chocolatey.exe",
-        "bin/cinst.exe",
-        "bin/clist.exe",
-        "bin/cpack.exe",
-        "bin/cpush.exe",
-        "bin/cuninst.exe",
-        "bin/cup.exe",
-        "bin/cver.exe",
-        "bin/RefreshEnv.cmd"
+        "choco.exe"
     ],
     "checkver": {
         "url": "https://github.com/chocolatey/choco/releases",
         "regex": "/chocolatey/choco/releases/tag/([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://chocolatey.org/install.ps1"
-    }
+        "url": "https://community.chocolatey.org/api/v2/package/chocolatey/$version#/dl.7z"
+    },
+    "notes": "Intended use is making chocolatey packages only. Do not use this for installing software on your system."
 }
