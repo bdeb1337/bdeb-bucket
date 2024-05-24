@@ -8,7 +8,7 @@
     "hash": "44e045ed5350758616d664c5af631e7f2cd10165f5bf2bd82cbf3a0bb8f63462",
     "installer": {
         "script": [
-            "$env:ChocolateyInstall=\"$dir\" ",
+            "$env:ChocolateyInstall=\"$dir/choco\" ",
             "Set-ExecutionPolicy Bypass -Scope Process -Force;",
             "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;",
             "iex(\"$dir\\install.ps1\")",
