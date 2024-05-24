@@ -6,9 +6,8 @@
     "changelog": "https://docs.chocolatey.org/en-us/choco/release-notes",
     "url": "https://community.chocolatey.org/api/v2/package/chocolatey/2.2.2#/dl.7z",
     "hash": "4e1acbdac571719f90b2566566668c448a20074e7c2e3faa37251c62af4efd86",
-    "pre_install": "Expand-7zipArchive \"$dir\\tools\\chocolateyInstall\" \"$dir\"",
     "bin": [
-        "choco.exe"
+        "tools/chocolateyInstall/choco.exe"
     ],
     "checkver": {
         "url": "https://github.com/chocolatey/choco/releases",
